@@ -1,13 +1,15 @@
 extends: conditional
-message: "Spell out '%s', if it's unfamiliar to the audience."
+message: "Define '%s' on first use. Write the full term followed by the abbreviation in parentheses, for example: 'Application Programming Interface (API)'. Use the abbreviation in all subsequent mentions."
 link: 'https://developers.google.com/style/abbreviations'
-level: suggestion
+level: warning
+scope: paragraph
 ignorecase: false
-# Ensures that the existence of 'first' implies the existence of 'second'.
+# Ensures that if an abbreviation appears, its full definition with
+# the abbreviation in parentheses also appears in the document.
 first: '\b([A-Z]{3,5})\b'
 second: '(?:\b[A-Z][a-z]+ )+\(([A-Z]{3,5})\)'
-# ... with the exception of these:
 exceptions:
+  # Inherited from Google Acronyms — universally understood
   - API
   - ASP
   - CLI
@@ -62,3 +64,6 @@ exceptions:
   - XSS
   - YAML
   - ZIP
+  # Gravv-specific — add abbreviations that don't need defining here
+  - KYC
+  - FX
