@@ -1,5 +1,7 @@
 # A day in the life of a junior technical writer
 
+SDK, MiVIP, MRV
+
 ## 7:30 AM — The commute and the mental warm-up
 
 The day begins before the laptop is even open. On the bus or in the car, a junior technical writer is already thinking about what is waiting for them at the desk. Yesterday, a senior engineer left a comment on a pull request flagging a paragraph in the API reference guide as "technically inaccurate." The writer is not entirely sure what is wrong yet. That uncertainty sits at the back of the mind throughout the morning commute, alongside a mental list of tasks: finish the first draft of the authentication flow tutorial, respond to review feedback on the onboarding guide, and attend a standup call at nine.
